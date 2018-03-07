@@ -1,0 +1,29 @@
+.div-container{
+    padding: 1.8%;
+    margin: 1.8%;
+}
+.col-xs-6{
+    margin: 1.6%;
+}
+.top-heading{
+    border-bottom: #E05C65 solid 3px;
+}
+em {float:right; color:#E05C65; padding-left:10px;}
+    .error input {background-color:#E3C3C5;}
+    .error ::-webkit-input-placeholder { color: #999; }
+    .error :-moz-placeholder { color: #999; }
+    .error ::-moz-placeholder {color: #999; }
+    .error :ms-input-placeholder { color: #999; }
+
+.ng-valid[required] {
+    border-left: 5px solid #42A948; /* green */
+    }
+    
+.ng-invalid {
+    border-left: 5px solid #a94442; /* red */
+}
+.required{
+    font-size: 12px;
+    margin-top: 12px;
+}
+      
