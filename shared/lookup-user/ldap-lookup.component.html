@@ -1,0 +1,5 @@
+<div   [formGroup]="parentForm">
+    <select2 [data]="ldapUserList" customSearchEnabled="true" (open)="initialiseLookUp()" (search)="searchUser($event)"  
+        [formControlName]="frmField" [placeholder]="placeholderHeading" [value]="value" (update)="onUserSelected($event)">
+    </select2>
+</div>

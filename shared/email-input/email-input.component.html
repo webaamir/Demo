@@ -1,0 +1,13 @@
+<div class="input-group" [formGroup]="parentForm">
+  <div class="input-group-addon">
+    <i class="fa fa-envelope-o"></i>
+  </div>
+  <input class="form-control" [placeholder]="placeholderHeading"  [formControlName]="frmField"  type="email" aria-describedby="basic-addon1" [readonly]="readonly"
+         pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"/>
+</div>
+
+<span *ngIf="getFieldName().errors && (getFieldName().dirty || getFieldName().touched)" class="invalid-error">
+    <span *ngIf="getFieldName().hasError('required') && required">{{displayFieldName}} is required</span>
+    <span *ngIf="getFieldName().hasError('pattern')">{{displayFieldName}} has wrong value</span>
+</span>
+

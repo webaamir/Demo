@@ -1,0 +1,12 @@
+<div class="input-group" [formGroup]="parentForm">
+  <div class="input-group-addon">
+    <i class="glyphicon glyphicon-phone"></i>
+  </div>
+  <input class="form-control" [placeholder]="placeholderHeading" [formControlName]="frmField" type="text" aria-describedby="basic-addon1" [readonly]="readonly"/>
+</div>
+
+<span *ngIf="getFieldName().errors && (getFieldName().dirty || getFieldName().touched)" class="invalid-error">
+    <span *ngIf="getFieldName().hasError('required') && required">{{displayFieldName}} is required</span>
+</span>
+
+  

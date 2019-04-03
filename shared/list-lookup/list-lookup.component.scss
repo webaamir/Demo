@@ -1,0 +1,35 @@
+.form-control{
+    text-align: center;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+.mat-cell {
+    font-size: 12px;
+}
+
+.mat-table {
+    overflow: auto;
+    max-height: 435px;
+}
+
+div > .mat-elevation-z8 {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.mat-dialog-container{
+    padding:10px !important;
+    overflow: hidden  !important;
+}
+
+hr {
+     margin-top: 0px; 
+     margin-bottom: 0px; 
+} 
+.is-enabled-col-width{
+    flex: 0 0 135px;
+}

@@ -1,0 +1,9 @@
+  <div class='input-group date' [formGroup]="parentForm" >
+    <input type='text' class="form-control"  [formControlName]="frmField"  [placeholder]="placeholderHeading"  #dp="bsDatepicker" [bsConfig]="datePickerConfig" bsDatepicker useValueAsDate
+    />
+    <span class="input-group-addon" style="cursor: pointer;" title="Open" (click)="dp.toggle()">
+      <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+  </div>
+
+ 

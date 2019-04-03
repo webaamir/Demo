@@ -1,0 +1,12 @@
+<div *ngIf="messageModel!=null && messageModel?.MessageType!=null">
+  <div class='alert' [ngClass]="{'alert-success': messageModel.MessageType == MessageType.Success ,'alert-danger': !messageModel.MessageType == MessageType.Success  }"
+    role="alert" [hidden]="messageModel.DisplayMessage == '' || messageModel.DisplayMessage == null">
+    <span *ngIf="messageModel.MessageType==MessageType.Success"><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+    <span *ngIf="messageModel.MessageType==MessageType.Warning"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+    <span *ngIf="messageModel.MessageType==MessageType.Error"><i class="fa fa-ban" aria-hidden="true"></i></span>
+    {{this.messageModel?.DisplayMessage}}
+   <button type="button" class="close" (click)="Close()" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+   </button>
+  </div>
+</div>

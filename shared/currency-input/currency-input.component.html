@@ -1,0 +1,7 @@
+  <div class="input-group mb-3" [formGroup]="parentForm">
+    <div class="input-group-addon">
+      <span class="input-group-text currency-text">{{currencyCode}}</span>
+    </div>
+    <input type="text" class="form-control" [placeholder]="placeholderHeading"  [ngClass]="cssClass" 
+             [formControlName]="frmField" [readonly]="isReadOnly" aria-describedby="basic-addon1" min="0" max="99999999999999">
+  </div>
